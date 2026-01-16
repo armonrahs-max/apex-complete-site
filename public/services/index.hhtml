@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Services | Apex Complete</title>
+  <meta name="description" content="Apex Complete services for homeowners, facilities, and tradesmen—repairs, installs, and maintenance across CO, NY, TX, and OH." />
+</head>
+
+<body style="font-family: Arial, sans-serif; margin: 0; padding: 0; line-height: 1.5;">
+  <header style="padding: 20px; border-bottom: 1px solid #eee;">
+    <h1 style="margin: 0;">Apex Complete</h1>
+    <p style="margin: 6px 0 0; font-weight: bold;">
+      Services for Homeowners, Facilities, and Tradesmen
+    </p>
+    <p style="margin: 6px 0 0;">Serving Colorado • New York • Texas • Ohio (Cleveland area)</p>
+  </header>
+
+  <main style="padding: 20px; max-width: 900px; margin: 0 auto;">
+    <h2>Services</h2>
+    <p>
+      Apex Complete connects homeowners, facilities, and skilled tradesmen for repairs, installs, and ongoing maintenance.
+      Below are core service categories—customize as you launch.
+    </p>
+
+    <h3>Homeowners</h3>
+    <ul>
+      <li>Handyman repairs and small projects</li>
+      <li>Plumbing: faucets, fixtures, minor leaks</li>
+      <li>Electrical: outlets, lighting, ceiling fans</li>
+      <li>Painting, drywall patching, trim work</li>
+      <li>Carpentry and assembly</li>
+      <li>Landscaping and yard cleanup</li>
+    </ul>
+
+    <h3>Facilities</h3>
+    <ul>
+      <li>Preventive maintenance support</li>
+      <li>Quick-turn repairs and vendor sourcing</li>
+      <li>Light renovations and upkeep</li>
+      <li>Recurring maintenance scheduling (future)</li>
+    </ul>
+
+    <h3>Tradesmen</h3>
+    <ul>
+      <li>Job opportunities and lead flow</li>
+      <li>Profile listing with service area</li>
+      <li>Scheduling and customer communication</li>
+      <li>Credential uploads and verification (as applicable)</li>
+    </ul>
+
+    <h3>Contact</h3>
+    <p><strong>Email:</strong> <a href="mailto:armonrahs@gmail.com">armonrahs@gmail.com</a></p>
+    <p><a href="/" style="text-decoration:none;">← Back to Home</a></p>
+  </main>
+
+  <footer style="padding: 20px; border-top: 1px solid #eee; text-align: center;">
+    <small>© <span id="year"></span> Apex Complete</small>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
