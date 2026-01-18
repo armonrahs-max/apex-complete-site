@@ -1,11 +1,8 @@
+{}
 
-{
-  "cleanUrls": true,
-  "trailingSlash": false,
-  "rewrites": [
-    { "source": "/services", "destination": "/services/index.html" },
-    { "source": "/services/", "destination": "/services/index.html" }
-  
+
+  {
+
 
   
 
