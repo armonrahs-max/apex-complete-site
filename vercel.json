@@ -1,6 +1,10 @@
-{
-  "rewrites": [
-    { "source": "/services", "destination": "/services/index.html" },
-    { "source": "/services/", "destination": "/services/index.html" }
+{{
+  "routes": [
+    { "handle": "filesystem" },
+    { "src": "/(.*)", "dest": "/index.html" }
+  ]
+}
+
+
   ]
 }
