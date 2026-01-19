@@ -15,7 +15,10 @@
     .wrap { max-width: 980px; margin: 0 auto; padding: 28px 18px 60px; }
     .hero { padding: 22px; border-radius: 18px; background: rgba(255,255,255,.06); border:1px solid rgba(255,255,255,.10); }
     .logo { max-width: 320px; width: 100%; height: auto; display: block; margin: 0 0 10px; }
-    .banner { width: 100%; max-width: 900px; height: auto; display:block; border-radius: 12px; margin: 14px 0; }
+
+    /* Big images (men working + horizontal) */
+    .banner { width: 100%; max-width: 700px; height: auto; display:block; border-radius: 12px; margin: 14px auto; }
+
     .row { display:flex; gap:12px; flex-wrap:wrap; margin-top: 12px; }
     .worker { max-width: 220px; width: 100%; height: auto; display:block; border-radius: 12px; }
     a { color: inherit; }
@@ -27,26 +30,32 @@
   <div class="wrap">
     <section class="hero">
       <img class="logo" src="/assets/branding/primarylogo.png" alt="Apex Complete Logo" />
- ... src="/assets/branding/horizontal-wide-image.png"
- 
-     <h1 style="margin: 6px 0 8px;">Apex Complete</h1>
+
+      <!-- FIRST: Men working (big) -->
+      <img class="banner" src="/assets/branding/workerlogo1wood.png" alt="Apex Complete - Men working" />
+
+      <!-- SECOND: Horizontal wide logo (big) -->
+      <img class="banner" src="/assets/branding/horizontal-wide-image.png" alt="Apex Complete - Horizontal Logo" />
+
+      <h1 style="margin: 6px 0 8px;">Apex Complete</h1>
+
       <p class="muted" style="margin: 0;">
         Connecting <strong>Homeowners</strong> and <strong>Facilities</strong> with trusted <strong>Trades</strong> for repairs,
         installs, and ongoing maintenance — all in one place.
-      </p> 
-    <div class="row">
-        <img class="worker" src="/assets/branding/workerlogo1wood.png" alt="Worker Logo 1" />
+      </p>
+
+      <div class="row">
         <img class="worker" src="/assets/branding/workerlogo2.png" alt="Worker Logo 2" />
       </div>
 
       <p class="muted" style="margin-top: 14px;">Site is live on Vercel.</p>
-   
- 
-
-       
-
-   
     </section>
   </div>
 </body>
 </html>
+
+
+
+
+
+
