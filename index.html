@@ -39,8 +39,16 @@
     .brand{
       display:flex; align-items:center; gap:10px;
       min-width:0;
-    }
-    .brand img{width:44px; height:auto; border-radius:10px;}
+    
+    .brand img{
+  width:44px;
+  height:34px;
+  object-fit:cover;
+  object-position:top;
+  border-radius:10px;
+  display:block;
+}
+
     .brand .name{font-weight:700; letter-spacing:.2px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
     .nav{display:flex; gap:10px; flex-wrap:wrap; justify-content:flex-end;}
     .pill{
