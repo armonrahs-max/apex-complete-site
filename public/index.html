@@ -6,20 +6,94 @@
   <title>Apex Complete | Homeowners, Facilities & Trades | CO, NY, TX, OH</title>
 
   <!-- Favicon -->
-  <link rel="icon" type="image/png" href="/assets/branding/primarylogo.png" />
-  <link rel="icon" href="/assets/branding/primarylogo.png" sizes="any" />
-  <link rel="apple-touch-icon" href="/assets/branding/primarylogo.png" />
+  <link rel="icon" type="image/png" href="/assets/branding/primarylogo_clean.png" />
+  <link rel="icon" href="/assets/branding/primarylogo_clean.png" sizes="any" />
+  <link rel="apple-touch-icon" href="/assets/branding/primarylogo_clean.png" />
 
   <meta name="description" content="Apex Complete connects homeowners, facilities, and trades for repairs, installs, and maintenance across Colorado, New York, Texas, and Ohio." />
 
   <style>
-    body { margin: 0; font-family: Arial, Helvetica, sans-serif; background:#0b1220; color:#eef2ff; }
-    .wrap { max-width: 980px; margin: 0 auto; padding: 28px 18px 60px; }
-    .hero { padding: 22px; border-radius: 18px; background: rgba(255,255,255,.06); border:1px solid rgba(255,255,255,.10); }
-    .logo { max-width: 320px; width: 100%; height: auto; display: block; margin: 0 0 10px; }
-    .banner { width: 100%; max-width: 900px; height: auto; display: block; border-radius: 12px; margin: 14px auto; }
-    a { color: inherit; }
-    .muted { color: rgba(238,242,255,.75); }
+    :root{
+      --bg:#0b1220;
+      --card:rgba(255,255,255,.06);
+      --border:rgba(255,255,255,.10);
+      --text:#eef2ff;
+      --muted:rgba(238,242,255,.75);
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family: Arial, Helvetica, sans-serif;
+      background:var(--bg);
+      color:var(--text);
+      line-height:1.5;
+    }
+    a{color:inherit}
+
+    .wrap{max-width:980px; margin:0 auto; padding:22px 18px 60px;}
+
+    .topbar{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:12px;
+      padding:12px 14px;
+      border:1px solid var(--border);
+      border-radius:16px;
+      background:var(--card);
+      margin-bottom:16px;
+      position:sticky;
+      top:0;
+      z-index:9999;
+      backdrop-filter: blur(6px);
+    }
+    .brand{
+      display:flex;
+      align-items:center;
+      gap:10px;
+      min-width:0;
+    }
+    .brand img{
+      width:44px;
+      height:34px;
+      object-fit:cover;
+      object-position:top;
+      border-radius:10px;
+      display:block;
+    }
+    .name{
+      font-weight:700;
+      white-space:nowrap;
+      overflow:hidden;
+      text-overflow:ellipsis;
+    }
+    .nav{display:flex; gap:10px; flex-wrap:wrap; justify-content:flex-end;}
+    .pill{
+      padding:8px 10px;
+      border-radius:999px;
+      border:1px solid var(--border);
+      background:rgba(0,0,0,.10);
+      font-size:14px;
+      text-decoration:none;
+    }
+
+    .hero{
+      padding:22px;
+      border-radius:18px;
+      background:var(--card);
+      border:1px solid var(--border);
+    }
+    .banner{
+      width:100%;
+      max-width:900px;
+      height:auto;
+      display:block;
+      border-radius:12px;
+      margin:14px auto;
+      border:1px solid rgba(255,255,255,.08);
+    }
+    h1{margin:6px 0 8px; font-size:34px; line-height:1.12;}
+    .muted{color:var(--muted);}
   </style>
 </head>
 
@@ -30,6 +104,7 @@
       <div class="brand">
         <img src="/assets/branding/primarylogo_clean.png" alt="Apex Complete" />
         <div class="name">Apex Complete</div>
+        <div style="margin-left:10px; font-weight:700; color:yellow;">TOPBAR TEST</div>
       </div>
       <div class="nav">
         <a class="pill" href="/services/">Services</a>
@@ -41,15 +116,18 @@
       <img class="banner" src="/assets/branding/workerlogo1wood.png" alt="Apex Complete - Men working (wood)" />
       <img class="banner" src="/assets/branding/horizontal-wide-image.png" alt="Apex Complete - Horizontal Logo" />
 
-      <h1 style="margin: 6px 0 8px;">Apex Complete</h1>
+      <h1>Apex Complete</h1>
 
-      <p class="muted" style="margin: 0;">
+      <p class="muted" style="margin:0;">
         Connecting <strong>Homeowners</strong> and <strong>Facilities</strong> with trusted <strong>Trades</strong> for repairs,
         installs, and ongoing maintenance — all in one place.
       </p>
 
-      <p class="muted" style="margin-top: 14px;" id="contact">Contact: <a href="mailto:armonrahs@gmail.com">armonrahs@gmail.com</a></p>
-      <p class="muted" style="margin-top: 14px;">Site is live on Vercel ✅</p>
+      <p class="muted" style="margin-top:14px;" id="contact">
+        Contact: <a href="mailto:armonrahs@gmail.com">armonrahs@gmail.com</a>
+      </p>
+
+      <p class="muted" style="margin-top:10px;">Site is live on Vercel ✅</p>
     </section>
 
   </div>
